@@ -39,9 +39,6 @@ public class Autopark {
     }
 
 
-    public Autopark(){
-    }
-
     public Autopark(int vehicleCapacity, String location){
         this.vehicleCapacity = vehicleCapacity;
         this.location = location;

@@ -51,16 +51,6 @@ public class Auto {
         else {
             System.out.println("*Not enough fuel.");
         }
-
-        /*
-        if (fuelLevel >= 10){
-            System.out.println("*Wroom wroom*");
-            fuelLevel -= 10;
-        }
-        else{
-            System.out.println("*No fuel, womp womp*");
-        }
-            */
     }
 
     public void seeInfo(){
@@ -72,12 +62,24 @@ public class Auto {
 
     public void refuel(int fuel){
         //set fuel level
+        //pour fuel into tank
+        int newLevel = fuelCapacity + fuel;
+        if (fuel > 0) { 
+            if (fuelCapacity >= newLevel){
+                fuelLevel = newLevel;
+            }
+            else if (newLevel > fuelCapacity){
+                fuelLevel = fuelCapacity;
+            }
+        }
+
+        /*
         if (fuel > 0) { 
             fuelLevel = fuel;
             if (fuelLevel > fuelCapacity){
             fuelLevel = fuelCapacity;
             }
-        }
+        }*/
     }
 
 
