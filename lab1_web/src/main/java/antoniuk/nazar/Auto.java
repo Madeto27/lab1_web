@@ -32,6 +32,7 @@ public class Auto {
         this.fuelLevel = newFuelLevel;
     }
 
+    
 
     public Auto(String brand, int fuelCapacity){
         this.brand = brand;
@@ -61,7 +62,6 @@ public class Auto {
     }
 
     public void refuel(int fuel){
-        //set fuel level
         //pour fuel into tank
         int newLevel = fuelCapacity + fuel;
         if (fuel > 0) { 
@@ -73,6 +73,7 @@ public class Auto {
             }
         }
 
+        //set fuel level
         /*
         if (fuel > 0) { 
             fuelLevel = fuel;

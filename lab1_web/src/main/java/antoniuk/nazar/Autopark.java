@@ -1,27 +1,23 @@
 package antoniuk.nazar;
 
-public class Autopark {
+import java.util.ArrayList;
+
+public final class Autopark {
     //vehicle capacity
     //location?
     //filled percentage
-    private int vehicleCapacity;
-    private int vehicleParked;
+
+    private static Autopark instance;
+    private int carCapacity;
     private double filled;
     private String location;
+    private ArrayList<Auto> cars;
 
-
-    public int getVehicleCapacity() {
-        return vehicleCapacity;
+    public int getCarCapacity() {
+        return carCapacity;
     }
-    public void setVehicleCapacity(int newCapacity) {
-        this.vehicleCapacity = newCapacity;
-    }
-    
-    public int getVehicleParked() {
-        return vehicleParked;
-    }
-    public void setVehicleParked(int newParked) {
-        this.vehicleParked = newParked;
+    public void setCarCapacity(int newCapacity) {
+        this.carCapacity = newCapacity;
     }
 
     public double getFilled() {
@@ -38,17 +34,33 @@ public class Autopark {
         this.location = newLocation;
     }
 
+    public ArrayList<Auto> getCars() {
+        return cars;
+    }
+    public void setCars(ArrayList<Auto> cars) {
+        this.cars = cars;
+    }
 
-    public Autopark(int vehicleCapacity, String location){
-        this.vehicleCapacity = vehicleCapacity;
+
+    private Autopark(int carCapacity, String location) {
+        this.carCapacity = carCapacity;
+        filled = 0;
+        this.cars = new ArrayList<>();
         this.location = location;
+    }
+
+    public static Autopark getAutopark(int carCapacity, String location){
+        if (instance == null) {
+            instance = new Autopark(carCapacity, location);
+        }
+        return instance;
     }
 
 
     public void addVehicle(Auto auto){
         if (filled < 1) {
-            vehicleParked += 1;
-            double newFilled = (double)vehicleParked/vehicleCapacity;
+            cars.add(auto);
+            double newFilled = (double)cars.size()/carCapacity;
             filled = newFilled;
             System.out.println("New filled percentage: " + filled*100 + "%");
         }
@@ -63,7 +75,7 @@ public class Autopark {
     public void seeInfo(){
         //display location, capacity and percantage
         System.out.println("Location: " + location +
-                           "\nVehicle capacity: " + vehicleCapacity +
+                           "\nVehicle capacity: " + carCapacity +
                            "\nFilled percentage: " + filled*100 + "%");
     }
 }
