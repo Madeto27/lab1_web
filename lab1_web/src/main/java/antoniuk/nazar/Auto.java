@@ -72,15 +72,6 @@ public class Auto {
                 fuelLevel = fuelCapacity;
             }
         }
-
-        //set fuel level
-        /*
-        if (fuel > 0) { 
-            fuelLevel = fuel;
-            if (fuelLevel > fuelCapacity){
-            fuelLevel = fuelCapacity;
-            }
-        }*/
     }
 
 
