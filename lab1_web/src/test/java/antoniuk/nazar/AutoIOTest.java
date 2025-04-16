@@ -11,7 +11,7 @@ public class AutoIOTest {
         ArrayList<Auto> autos = new ArrayList<>();
         autos.add(new Auto("Dodge", 50));
         autos.add(new Auto("Ford", 40));
-
+        
         AutoIO.exportAutos(autos, "test.json");
         ArrayList<Auto> testAutos = AutoIO.importAutos("test.json");
 
