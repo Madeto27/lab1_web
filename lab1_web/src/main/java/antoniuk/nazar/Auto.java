@@ -3,13 +3,10 @@ package antoniuk.nazar;
 import java.util.Objects;
 
 public class Auto {
-    //fuel tank
-    //fuel level
-    //brand
-
     private String brand;
     private int fuelCapacity;
     private double fuelLevel;
+    private boolean isParked;
 
     public String getBrand() {
         return brand;
@@ -31,15 +28,19 @@ public class Auto {
     public void setFuelLevel(int newFuelLevel) {
         this.fuelLevel = newFuelLevel;
     }
-
-    
+ 
+    public boolean  getIsParked() {
+        return isParked;
+    }
+    public void setIsParked(boolean isParked) {
+        this.isParked = isParked;
+    }
 
     public Auto(String brand, int fuelCapacity){
         this.brand = brand;
         this.fuelCapacity = fuelCapacity;
         this.fuelLevel = fuelCapacity;
     }
-
 
     public void ride(int dist){
         //lower fuel level
@@ -50,7 +51,7 @@ public class Auto {
             System.out.println("You rode " + dist + "km.");
         }
         else {
-            System.out.println("*Not enough fuel.");
+            System.out.println("Not enough fuel");
         }
     }
 
