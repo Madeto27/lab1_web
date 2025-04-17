@@ -3,15 +3,11 @@ package antoniuk.nazar;
 import java.util.ArrayList;
 
 public final class Autopark {
-    //vehicle capacity
-    //location?
-    //filled percentage
-
     private static Autopark instance;
     private int carCapacity;
     private double filled;
     private String location;
-    private ArrayList<Auto> cars;
+    private ArrayList<Auto> parkedAutos;
 
     public int getCarCapacity() {
         return carCapacity;
@@ -34,48 +30,49 @@ public final class Autopark {
         this.location = newLocation;
     }
 
-    public ArrayList<Auto> getCars() {
-        return cars;
+    public ArrayList<Auto> getParkedAutos() {
+        return parkedAutos;
     }
-    public void setCars(ArrayList<Auto> cars) {
-        this.cars = cars;
+    public void setParkedAutos(ArrayList<Auto> parkedAutos) {
+        this.parkedAutos = parkedAutos;
     }
 
 
     private Autopark(int carCapacity, String location) {
         this.carCapacity = carCapacity;
         filled = 0;
-        this.cars = new ArrayList<>();
+        this.parkedAutos = new ArrayList<>();
         this.location = location;
     }
 
-    public static Autopark getAutopark(int carCapacity, String location){
+    public static Autopark getAutopark(int carCapacity, String location) {
         if (instance == null) {
             instance = new Autopark(carCapacity, location);
         }
         return instance;
     }
 
-
-    public void addVehicle(Auto auto){
+    public void parkVehicle(Auto auto) {
         if (filled < 1) {
-            cars.add(auto);
-            double newFilled = (double)cars.size()/carCapacity;
+            parkedAutos.add(auto);
+            double newFilled = (double)parkedAutos.size()/carCapacity;
             filled = newFilled;
-            System.out.println("New filled percentage: " + filled*100 + "%");
+            auto.setIsParked(true);
         }
     }
 
-    public void changeLocation(String newLocation){
-        //change location
+    public void changeLocation(String newLocation) {
         setLocation(newLocation);
         System.out.println("Autopark was relocated: " + newLocation);
     }
 
-    public void seeInfo(){
-        //display location, capacity and percantage
+    public void seeInfo() {
         System.out.println("Location: " + location +
                            "\nVehicle capacity: " + carCapacity +
                            "\nFilled percentage: " + filled*100 + "%");
+    }
+
+    public static void reset() {
+        instance = null;
     }
 }
