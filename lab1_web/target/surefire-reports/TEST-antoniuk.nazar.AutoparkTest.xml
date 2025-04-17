@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="antoniuk.nazar.AutoparkTest" time="0.059" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="antoniuk.nazar.AutoparkTest" time="0.078" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.class.path" value="C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\test-classes;C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\classes;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\nazikus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\test-classes;C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\classes;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\nazikus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\nazikus\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,10 +15,10 @@
     <property name="user.country" value="UA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\nazikus\AppData\Local\Temp\surefire13793482435906124885\surefirebooter-20250410214602119_3.jar C:\Users\nazikus\AppData\Local\Temp\surefire13793482435906124885 2025-04-10T21-46-01_958-jvmRun1 surefire-20250410214602119_1tmp surefire_0-20250410214602119_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\nazikus\AppData\Local\Temp\surefire727328408771349570\surefirebooter-20250417183136077_3.jar C:\Users\nazikus\AppData\Local\Temp\surefire727328408771349570 2025-04-17T18-31-35_852-jvmRun1 surefire-20250417183136077_1tmp surefire_0-20250417183136077_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="antoniuk.nazar.AutoparkTest#filledNormalTest"/>
-    <property name="surefire.test.class.path" value="C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\test-classes;C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\classes;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\nazikus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="test" value="antoniuk.nazar.AutoparkTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\test-classes;C:\Users\nazikus\Desktop\lab1_web\lab1_web\target\classes;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\nazikus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\nazikus\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\nazikus\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\nazikus"/>
     <property name="user.language" value="uk"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\nazikus\AppData\Local\Temp\surefire13793482435906124885\surefirebooter-20250410214602119_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\nazikus\AppData\Local\Temp\surefire727328408771349570\surefirebooter-20250417183136077_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-LTS"/>
@@ -61,8 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="filledNormalTest" classname="antoniuk.nazar.AutoparkTest" time="0.033">
-    <system-out><![CDATA[New filled percentage: 10.0%
-]]></system-out>
-  </testcase>
+  <testcase name="filledMaxTest" classname="antoniuk.nazar.AutoparkTest" time="0.03"/>
+  <testcase name="parkVehicleTest" classname="antoniuk.nazar.AutoparkTest" time="0.003"/>
+  <testcase name="filledNormalTest" classname="antoniuk.nazar.AutoparkTest" time="0.004"/>
 </testsuite>

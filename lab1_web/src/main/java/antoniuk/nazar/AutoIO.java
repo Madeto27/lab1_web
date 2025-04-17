@@ -20,7 +20,6 @@ public class AutoIO {
         fileWriter.close();
     }
 
-        
     public static ArrayList<Auto> importAutos(String fileName) throws IOException {
         Gson gson = new Gson();
         FileReader fileReader = new FileReader(fileName);

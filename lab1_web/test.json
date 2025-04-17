@@ -1,1 +1,1 @@
-[{"brand":"Dodge","fuelCapacity":50,"fuelLevel":50.0},{"brand":"Ford","fuelCapacity":40,"fuelLevel":40.0}]
+[{"brand":"Dodge","fuelCapacity":50,"fuelLevel":50.0,"isParked":false},{"brand":"Ford","fuelCapacity":40,"fuelLevel":40.0,"isParked":false}]
